@@ -1,0 +1,26 @@
+.navbar {
+  border: none;
+  height: 90px;
+  padding-top: 19px;
+  background-color: rgba(255, 255, 255, 0);
+
+  @include transition(height 0.25s, padding-top 0.25s, background-color 0.25s);
+
+  .navbar-header {
+    margin-bottom: 21px;
+    @include transition(margin-bottom 0.25s);
+  }
+}
+
+.navbar-small {
+  height: 50px;
+  padding-top: 0px;
+  .navbar-header {
+    margin-bottom: 0px;
+  }
+  background-color: rgb(255, 255, 255);
+}
+
+.navbar-collapse {
+  border: none;
+}

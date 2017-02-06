@@ -1,0 +1,58 @@
+.header {
+  z-index: -2;
+  position: relative;
+  width: 100%;
+  height: 400px;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 400px;
+  width: 100%;
+}
+.header-parallax {
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: url("../img/calculator-1.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100% auto;
+}
+.header-content-padding {
+  padding-top: 190px;
+}
+.header-title {
+  font-size: 3.4em;
+  //color: $p2c5;
+  margin: 0;
+  //font-family: $josefin;
+}
+.header-subtitle {
+  font-size: 1.1em;
+  //color: $p2c4;
+  //font-family: $josefin;
+}
+.header-text-panel {
+  background-color: rgba(233, 233, 233, 0.33);
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 5px;
+
+  hr {
+    margin: 0 0 8px 0;
+    width: 70%;
+    border: 0;
+    height: 1px;
+    background: rgba(241, 241, 241, 0.45);
+  }
+}
