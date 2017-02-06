@@ -1,0 +1,27 @@
+body {
+  font-family: $lato;
+}
+
+.cobalt {
+  background-color: $cobalt;
+  color: rgb(249, 249, 249);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.black {
+  @extend .cobalt;
+  background-color: $black;
+}
+
+.white-1 {
+  @extend .cobalt;
+  background-color: rgb(236, 236, 236);
+  color: $black;
+}
+
+.white {
+  @extend .cobalt;
+  background-color: rgb(255, 255, 255);
+  color: $black;
+}

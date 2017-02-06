@@ -27,6 +27,10 @@
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: 100% auto;
+
+  @media screen and (max-width: 600px) {
+    background-size: auto auto;
+  }
 }
 .header-content-padding {
   padding-top: 190px;
@@ -35,12 +39,12 @@
   font-size: 3.4em;
   //color: $p2c5;
   margin: 0;
-  //font-family: $josefin;
+  font-family: $nunito;
 }
 .header-subtitle {
   font-size: 1.1em;
   //color: $p2c4;
-  //font-family: $josefin;
+  font-family: $lato;
 }
 .header-text-panel {
   background-color: rgba(233, 233, 233, 0.33);
@@ -48,11 +52,15 @@
   padding-top: 10px;
   padding-bottom: 5px;
 
+  h3 {
+    margin-top: 10px;
+  }
+
   hr {
-    margin: 0 0 8px 0;
+    margin: 0 0 0px 0;
     width: 70%;
     border: 0;
     height: 1px;
-    background: rgba(241, 241, 241, 0.45);
+    background: rgba(43, 43, 43, 0.45);
   }
 }

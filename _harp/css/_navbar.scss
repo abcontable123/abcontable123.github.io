@@ -4,13 +4,21 @@
   padding-top: 19px;
   background-color: rgba(255, 255, 255, 0);
 
-  @include transition(height 0.25s, padding-top 0.25s, background-color 0.25s);
+  @include transition(height 0.25s, padding-top 0.25s, background-color 0.25s, border 0.25s);
 
   .navbar-header {
     margin-bottom: 21px;
     @include transition(margin-bottom 0.25s);
   }
+
+  .nav-link {
+    font-family: $nunito;
+    color: rgb(244, 244, 244) !important;
+    @include transition(color 0.25s);
+  }
 }
+
+
 
 .navbar-small {
   height: 50px;
@@ -19,6 +27,12 @@
     margin-bottom: 0px;
   }
   background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid $cobalt;
+  color: $cobalt;
+
+  .nav-link {
+    color: $cobalt !important;
+  }
 }
 
 .navbar-collapse {
